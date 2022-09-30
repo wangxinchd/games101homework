@@ -5,6 +5,7 @@
 
 int main(){
 
+#if 0
     // Basic Example of cpp
     std::cout << "Example of cpp \n";
     float a = 1.0, b = 2.0;
@@ -43,7 +44,7 @@ int main(){
     // matrix scalar multiply i * 2.0
     // matrix multiply i * j
     // matrix multiply vector i * v
-
+#endif
 
     /*
     * PA 0
@@ -59,25 +60,8 @@ int main(){
          std::sin(pi/4), std::cos(pi/4), 2,
          0, 0, 1;
     Eigen::Vector3f p1 = M * P;
-    std::cout << p1 << std::endl;
+    std::cout << p1.head(2)<< std::endl;
 
 
     return 0;
 }
-// #define PI 3.1415926f
-// #define DEG2RAD (PI/180.0f)
-// int main()
-// {
-
-//     Eigen::Vector3f P(2,1,1);
-//     Eigen::Matrix3f M;
-
-//     float rad = 45.0f * DEG2RAD;
-//     M << cos(rad),-sin(rad),1,
-//          sin(rad),cos(rad) ,2,
-//          0,0,1;
-
-//     Eigen::Vector3f P2 = M * P;
-//     std::cout<<P2<<std::endl;
-//     return 0;
-// }
